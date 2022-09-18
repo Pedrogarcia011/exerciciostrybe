@@ -1,0 +1,23 @@
+ol{
+    list-style: none;
+    text-align: center;
+}
+
+
+p{
+    text-align: center;
+}
+
+
+li:hover{
+    background-color: blue;
+}
+
+li:active{
+    font-style: italic;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
