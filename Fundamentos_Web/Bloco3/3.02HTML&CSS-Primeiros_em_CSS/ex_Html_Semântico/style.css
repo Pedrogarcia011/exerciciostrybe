@@ -1,0 +1,66 @@
+body{
+    background-color: azure;
+}
+
+header{
+    font-size: 25px;
+    text-align: center;
+    width: 1500px;
+    height: 100px;
+    border-color: brown;
+    border-style: outset;
+    background-color: azure;
+}
+
+nav ul#section li{
+    background-color: azure;
+    font-size: 20px;
+    border-color: blue;
+    border-style: ridge;
+    width: 250px;
+    text-align: center;
+    margin-left: 100px;
+    margin-block: 10px;
+    display: inline-block;
+}
+
+#fatos{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+#img1{
+    display: block;
+    margin-left: 380px;
+    width: 550px;
+    left: 100px;
+}
+
+#fatosg{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+#p1{
+    font-size: 25px;
+    text-align: center;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+img{
+    display: block;
+    width: 550px;
+    left: 100px;
+    margin-left: 380px;
+}
+
+#ultimop{
+    font-size: 25px;
+}
