@@ -1,7 +1,7 @@
 let word = 'tryber';
 let nova = []
 
-for (let i = word.length -1; i >= 0; i--){
+function app(l){ for (let i = word.length -1; i >= 0; i--){
     nova += word[i]
 }
-console.log (nova)
+console.log (nova)}
