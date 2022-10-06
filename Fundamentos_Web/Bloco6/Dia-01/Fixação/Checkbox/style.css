@@ -1,0 +1,23 @@
+#button{
+    border: black solid 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    }
+#style{
+  display: inline-block;
+  border: rgb(0, 0, 0) solid 1px;
+  width: 180px;
+  background-color: rgb(233, 233, 233);
+  color: black;
+  font-size: 13px;
+}
+    
+#label{
+    font-size: 20px;
+}
+
+.box{
+    display: inline-block;
+}

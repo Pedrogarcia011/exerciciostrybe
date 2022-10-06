@@ -153,10 +153,10 @@ function fizzBuzz(array){
 
     for(let numbers = 0; numbers < array.length; numbers +=1){
         if (array[numbers] % 3 == 0 && array[numbers] % 5 != 0){
-             arrayStrings.push('fizz')
+            arrayStrings.push('buzz')
+               arrayStrings.push('fizz')
         }else if (array[numbers] % 5 == 0 && array[numbers] % 3 != 0){
-             arrayStrings.push('buzz')
-        }else if (array[numbers] % 5 == 0 && array[numbers] % 3 == 0){
+       }else if (array[numbers] % 5 == 0 && array[numbers] % 3 == 0){
              arrayStrings.push('fizzBuzz')
         }else{
             arrayStrings.push('bug');
