@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo com Professor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title"><strong>FORMULÁRIO</strong></h1>
+    </header>
+<br>
+<form action="" method="get">
+    <section id="body">
+    <section>
+        <label for="myname">Nome Completo:</label>
+        <input type="text" name="name" id="myname" required>
+    </section>
+
+    <section>
+        <label for="myemail">E-mai:</label>
+        <input type="email" name="email" id="myemail" required>
+    </section>
+<br>
+    <section>
+        <p><strong>Escolha sua foto:</strong></p>
+        <label for="myfoto">
+            <input type="file" name="foto" id="myfoto">
+        </label>
+    </section>
+<br>
+
+    <section>
+        <p><strong>Sua Comida Favorita:</strong> <br> só pode escolher uma rsrs</p>
+        <input type="radio" name="comidas" id="pizza">Pizza
+        <input type="radio" name="comidas" id="sanduiche">Sanduiche
+        <input type="radio" name="comidas" id="cachorro-quente">Cachorro Quente
+        <input type="radio" name="comidas" id="carne">Rodizio de Carne
+    </section>
+<br>
+    <section>
+        <p><strong>O que gosta de fazer em seu tempo livre:</strong></p>
+        <textarea name="" id="text-voce" cols="30" rows="7"></textarea>
+    </section>
+<br>
+    <section>
+        <label for="password"><strong>Digite sua senha:</strong></label>
+        <input type="password" name="senha" id="password">
+    </section>
+<br>
+
+    <section>
+        <input type="checkbox" name="check" id="checkbox">
+        <label for="checkbox">Deseja receber novidades e promoções?</label>
+    </section>
+
+    <section>
+        <button type="submit"><em>Enviar Formulário</em></button>
+    </section>
+</section>
+</form>
+</body>
+</html>
