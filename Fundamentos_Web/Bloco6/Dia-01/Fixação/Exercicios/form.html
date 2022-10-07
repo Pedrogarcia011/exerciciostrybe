@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <header>
+            <h1 id="title"><strong>TRYBETRIP</strong></h1>
+            <h2 id="subtitle">Concorra a uma viagem!!</h2>
+        </header>
+<br>
+        <section id="nameEmail">
+            <label for="nameLabel" id="nomeCompleto">Nome completo:</label>
+            <input type="text" min="10" max="40" name="" id="nameLabel"><br>
+            <label for="emailLabel" id="email"> Email:</label>
+            <input type="email" min="10" max="50" name="" id="emailLabel">
+        </section>
+<br>
+        <section id="destinosPreferidos">
+            <h2 id="destino">Destinos preferidos:</h2>
+           <section id="radioDestinos">
+            <input type="radio" id="dest1" name="destinos" value="city">Cidade
+            <input type="radio" id="dest2" name="destinos" value="campp">Campo
+            <input type="radio" id="dest3" name="destinos" value="praia">Praia
+            <input type="radio" id="dest4" name="destinos" value="montanha">Montanha
+           </section>
+        </section>
+<br>
+<br>
+        <section id="perguntaGanhador">
+            <h3 id="pergunta">Por que deveria ser você o ganhador?</h2>
+                <textarea name="Pergunt" id="textArea" maxlength="500" cols="30" rows="10"></textarea>
+        </section>
+<br>
+        <section id="datatext">
+            <h3 id="perguntaData">Qual a melhor data para sua viagem?</h3>
+            <section id="data">
+                <label for="date1" id="data">Data:</label>
+                <input type="date" name="Data" id="date1">
+            </section>
+        </section>
+<br>
+        <section id="Oportunidaes">
+            <h3 id="oport">Gostaria de receber oportunidades como está:</h3>
+            <input type="radio" value="sim">Sim
+            <input type="radio" value="não">Não
+        </section>
+
+        <section id="imagens">
+            <h3>Concordo que imagens das minhas férias poderão ser usadas:</h3>
+
+            <input type="radio" value="sim">Sim
+            <input type="radio" value="não">Não
+        </section>
+<br>
+<section id="botton">
+            <button type="submit" id="bottonEnvia">Enviar</button>
+            <button type="reset">Limpar</button>
+        </section>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
