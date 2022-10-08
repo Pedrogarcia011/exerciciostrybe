@@ -1,69 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form action="" method="get">
-        <header>
-            <h1 id="title"><strong>TRYBETRIP</strong></h1>
-            <h2 id="subtitle">Concorra a uma viagem!!</h2>
-        </header>
+
+
+<body class="bg-success bg-opacity-10">
+    <!--Cabecalho-->
+    <header  class="border-secondary border rounded container text-center h-75 bg-success bg-opacity-25">
+        <h1 class="display-1"><strong>TRYBETRIP</strong></h1>
+        <h2 class="display-6 text-muted fst-italic mb-4 opacity-75">Concorra a uma viagem!!</h2>
+    </header>
+    <!--Cabecalho--> 
+
+
 <br>
-        <section id="nameEmail">
-            <label for="nameLabel" id="nomeCompleto">Nome completo:</label>
-            <input type="text" min="10" max="40" name="" id="nameLabel"><br>
-            <label for="emailLabel" id="email"> Email:</label>
-            <input type="email" min="10" max="50" name="" id="emailLabel">
+
+
+    <form class="border-secondary shadow-lg border-end border rounded bg-success bg-opacity-25 w-80 container" method="get">
+        <!--Name e Email-->
+        <section class="container w-80 p-75 p-3 mb-4  rounded">
+            <label for="" class="form-label">Nome completo:</label>
+            <input type="text" min="10" max="40" name="" placeholder="Nome Completo" class="form-control w-25"><br>
+            <label for="emailLabel" class="form-label"> Email:</label>
+            <input type="email" min="10" max="50" name="" placeholder="Email" class="form-control w-25">
         </section>
+        <!--Name e Email-->
+
 <br>
-        <section id="destinosPreferidos">
-            <h2 id="destino">Destinos preferidos:</h2>
-           <section id="radioDestinos">
-            <input type="radio" id="dest1" name="destinos" value="city">Cidade
-            <input type="radio" id="dest2" name="destinos" value="campp">Campo
-            <input type="radio" id="dest3" name="destinos" value="praia">Praia
-            <input type="radio" id="dest4" name="destinos" value="montanha">Montanha
+
+        <!--Destinos Preferidos-->
+        <section class="container mb-4">
+            <h2 class="display-6 mb-3">Destinos preferidos:</h2>
+           <section id="dest" >
+            <input id="cidade" type="radio" class="form-check-input" name="destinos" value="city">Cidade
+            <input type="radio" class="form-check-input" name="destinos" value="campp">Campo
+            <input type="radio" class="form-check-input" name="destinos" value="praia">Praia
+            <input type="radio" class="form-check-input" name="destinos" value="montanha">Montanha
            </section>
         </section>
+        <!--Destinos Preferidos-->
+
+
 <br>
 <br>
-        <section id="perguntaGanhador">
-            <h3 id="pergunta">Por que deveria ser você o ganhador?</h2>
-                <textarea name="Pergunt" id="textArea" maxlength="500" cols="30" rows="10"></textarea>
+
+        <!--Pergunta ganhador-->
+        <section class="container mb-4 form-floating">
+            <h3 class="mb-4 display-6" >Por que deveria ser você o ganhador?</h2>
+                <textarea class="form-control w-50" name="Pergunt" id="textArea" maxlength="500" cols="50" rows="10"></textarea>
         </section>
+        <!--Pergunta ganhador-->
+
+
 <br>
-        <section id="datatext">
-            <h3 id="perguntaData">Qual a melhor data para sua viagem?</h3>
+
+        <!--Data-->
+        <section class="container mb-4">
+            <h3 class="mb-4 display-6">Qual a melhor data para sua viagem?</h3>
             <section id="data">
                 <label for="date1" id="data">Data:</label>
-                <input type="date" name="Data" id="date1">
+                <input type="date" class="form-control w-25" name="Data" id="date1">
             </section>
         </section>
+        <!--Data-->
+
 <br>
-        <section id="Oportunidaes">
-            <h3 id="oport">Gostaria de receber oportunidades como está:</h3>
-            <input type="radio" value="sim">Sim
+
+
+        <!--Oportunidades-->
+        <section class="container mb-3">
+            <h3 class="display-6 fs-3">Gostaria de receber oportunidades como está:</h3>
+            <input class="form-check-input" type="radio" value="sim">Sim
+            <input class="form-check-input" type="radio" value="não">Não
+        </section>
+        <!--Oportunidades-->
+
+
+        <!--Direito de imagem-->
+        <section class="container mb-3">
+            <h4 class="display-6 fs-3">Concordo que imagens das minhas férias poderão ser usadas:</h4>
+
+            <input class="form-check-input" type="radio" value="sim">Sim
             <input type="radio" value="não">Não
         </section>
+        <!--Direito de imagem-->
 
-        <section id="imagens">
-            <h3>Concordo que imagens das minhas férias poderão ser usadas:</h3>
 
-            <input type="radio" value="sim">Sim
-            <input type="radio" value="não">Não
-        </section>
 <br>
-<section id="botton">
-            <button type="submit" id="bottonEnvia">Enviar</button>
-            <button type="reset">Limpar</button>
+
+
+        <!--Botton-->
+        <section class="container mb-3">
+            <button type="submit" class="mb-4 btn btn-primary ">Enviar</button>
+            <button type="reset" class="btn btn-secondary ms-1 mb-4">Limpar</button>
         </section>
+        <!--Botton-->
 
     </form>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
 </body>
 </html>
