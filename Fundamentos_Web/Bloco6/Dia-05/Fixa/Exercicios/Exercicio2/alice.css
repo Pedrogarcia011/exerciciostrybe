@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* CABECALHO CELULAR */
+
+  header{
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .ull{
+    text-decoration:underline;
+    margin-top: 1px;
+    color:rgb(112, 112, 112) ;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .lii{
+    margin-right: 20px;
+  }
+
+  .headerp{
+    font-size: 20px;
+  }
+  /* CABECALHO CELULAR */
+
+  /* CHAPTERS */
+  .aside-one{
+    margin: 15px;
+    margin-bottom: 40px;
+  }
+
+  aside h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .chaptersul{
+    font-size: 18px;
+  }
+  /* CHAPTERS */
+
+  /* INFORMATION */
+  .info-ul{
+    font-size: 18px;
+  }
+
+  .text-info{
+    font-size: 35px;
+    margin-bottom: 20px
+  }
+
+  .aside-two{
+    margin: 15px;
+    margin-bottom: 40px;
+  }
+  /* INFORMATION */
+
+  /* CHAPTER I. */
+  .chapter-h1{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  article p{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  /* CHAPTER I. */
+
+  /* FOOTER CELULAR */
+  footer{
+    background-color:rgb(231, 231, 231) ;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  footer h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+  }
+  /* FOOTER CELULAR */
