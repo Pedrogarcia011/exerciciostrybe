@@ -33,7 +33,7 @@ html {
   }
   /* CABECALHO CELULAR */
 
-  /* CHAPTERS */
+  /* CHAPTERS CELULAR*/
   .aside-one{
     margin: 15px;
     margin-bottom: 40px;
@@ -50,9 +50,9 @@ html {
   .chaptersul{
     font-size: 18px;
   }
-  /* CHAPTERS */
+  /* CHAPTERS CELULAR*/
 
-  /* INFORMATION */
+  /* INFORMATION CELULAR*/
   .info-ul{
     font-size: 18px;
   }
@@ -66,9 +66,9 @@ html {
     margin: 15px;
     margin-bottom: 40px;
   }
-  /* INFORMATION */
+  /* INFORMATION CELULAR*/
 
-  /* CHAPTER I. */
+  /* CHAPTER I. CELULAR*/
   .chapter-h1{
     margin: 15px;
     display: flex;
@@ -86,19 +86,81 @@ html {
     flex-direction: column;
     text-align: start;
   }
-  /* CHAPTER I. */
+  /* CHAPTER I. CELULAR*/
 
   /* FOOTER CELULAR */
-  footer{
+  footer {
     background-color:rgb(231, 231, 231) ;
     margin-top: 20px;
     height: 300px;
   }
 
-  footer h3{
+  footer h3 {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 25px;
   }
+
   /* FOOTER CELULAR */
+
+  @media  screen and (min-width: 767px) {
+    body {
+        background-color: rgb(189, 189, 189);
+    }
+
+    header {
+      border-radius: 2px;
+      justify-content: space-around;
+    }
+
+    .textChapters {
+      margin-bottom: 5px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      font-size: 60px;
+    }
+
+    .info-ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      font-size: 30px;
+    }
+
+    .div-ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    #text{
+      font-size: 40px;
+    }
+
+    #footer {
+      border-radius: 2px;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(231, 231, 231);
+    }
+
+    #title-footer {
+     text-align: center;
+     font-size: 32px;
+    }
+
+    #text-footer {
+      text-align: center;
+    }
+  }
+
+  @media  screen and (min-width: 1020px){
+    #nav-ul {
+      display: flex;
+      align-items: center;
+    }
+  }
