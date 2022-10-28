@@ -73,20 +73,22 @@ const estudantes = [
     },
   ];
   
+  /* [
+    { name: 'Jorge', materia: 'Português' },
+    { name: 'Mario', materia: 'Biologia' },
+    { name: 'Jorge', materia: 'Português' },
+    { name: 'Maria', materia: 'Química' },
+    { name: 'Natalia', materia: 'Português' },
+    { name: 'Wilson', materia: 'Português' },
+  ] */
 
-  const getBestClass = (acc, materia) => {
-    if(acc.nota > materia.nota)
-    return acc;
-    return materia;
-  };
-
-  const ligaoces = (estudante) => {
-   return estudante.map( (student) => {
-       return {
-           nome: student.nome,
-           materia: student.materias.reduce(getBestClass).name
-           
-    }     
-    })
-  }
-  console.log(ligaoces(estudantes));
+const getBestClass = estudantes.map( (estudante) => ({
+ name: estudante.nome,
+ materia: estudante.materias.reduce( (acc, curr) => {
+    if(acc.nota > curr.nota){
+      return acc
+    }
+    return curr
+ },{}).name
+}))
+console.log(getBestClass);
