@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>Color: <span id="value">white</span></p>
+      <button id="previous">Previous color</button>
+      <button id="next">Next color</button>
+    </div>
+    <script>
+      // Declaração do estado inicial
+      const INITIAL_STATE = {
+        colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+        index: 0,
+      };
+
+
+      // Declara o estado, declara o action
+      const reducer = (state = INITIAL_STATE, action) => {;
+        switch (action.type) {
+          case 'NEXT_COLOR': // Caso action.type for igual a NEXT_COLOR faça isso:
+            return {
+              ...state,// retorna o estado completo
+              index: state.index === 5 ? 0 : state.index + 1, // se state.index for igual a posição 5 do array retorne para 0 se não vai de 1 em 1.
+            }
+          case 'PREVIOUS_COLOR':// caso action.type for igual a PREVIOUS_COLOR faça isso:
+            return {
+              ...state,// retorna o estado completo
+              index: state.index === 0 ? 5 : state.index - 1// caso state.index estiver na posição 0 retorne para 5 se não decresenta de 1 em 1.
+            }
+          default:
+            return state;
+        }
+      }
+
+      const store = Redux.createStore(reducer);// declaração do store passando reducer.
+      console.log(store);
+      
+      const action = { type: 'PREVIOUS_COLOR'}// declarando os dois tipos de action
+      const action2 = { type: 'NEXT_COLOR'}// declarando os dois tipos de action.
+
+      const btnPrevious = document.getElementById('previous');// capturando o botão de decresentar.
+      const btnNext = document.getElementById('next');// capturando o botão de acresentar.
+
+      btnPrevious.addEventListener('click', () => {
+        store.dispatch(action);// se o botão de decresentar for clicado chama a action do tipo PREVIOUS_COLOR
+      })
+
+      btnNext.addEventListener('click', () => {
+        store.dispatch(action2)// se o botão de acresentar for clicado chama a action de NEXT_COLOR.
+      })
+
+      // Para renderizar as informaçoes na tela
+      store.subscribe(() => {
+        const {colors, index} = store.getState();// retornando colors e index do estado global.
+
+        document.getElementById('value').innerHTML = colors[index]; // mudando o nome das cores atraves do innerHTML
+        document.getElementById('container').style.backgroundColor = colors[index];// mudando o estilo atraves do style.
+
+      })
+    </script>
+  </body>
+</html>
